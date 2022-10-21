@@ -1,0 +1,81 @@
+:root {
+	--mainColor: #594545;
+	--mainColorLight: #9E7676;
+	--textColor: #eee;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+
+a.logo {
+    text-decoration: none;
+    color: beige;
+    font-size: 30px;
+}
+
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+	justify-content: flex-end;
+    align-items: end;
+    position: absolute;
+    right: 0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: absolute;
+		top: 60px;
+        right: 0;
+        height: 16%;
+        width: 100%;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
