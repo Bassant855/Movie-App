@@ -9,7 +9,7 @@ function MovieBox({poster_path,title,overview,release_date,vote_average}) {
   return (
     <div className="movieBox">
         <div className="container">
-                <img src={API_IMG+poster_path}  style={{width:'250px'}} className="image"/>
+                <img src={API_IMG+poster_path}   className="image"/>
                 <button className=" mt-2 rounded" onClick={handleShow} >Veiw More</button>
         </div>
         <Modal show={show} onHide={handleClose}>

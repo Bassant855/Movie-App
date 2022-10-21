@@ -40,8 +40,9 @@ nav {
 	justify-content: flex-end;
     align-items: end;
     position: absolute;
-    right: 0;
-    position: absolute;
+    right: 13px;
+    top: 18px;
+    
 }
 
 @media only screen and (max-width: 1024px) {
